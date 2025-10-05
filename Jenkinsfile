@@ -1,11 +1,3 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('jyoti') {
-            steps {
-                echo 'jyoti'
-            }
-        }
-    }
-}
+# File: run_message.sh
+#!/bin/bash
+echo "jyoti massage"
