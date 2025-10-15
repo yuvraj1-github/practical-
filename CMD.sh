@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Simple bash script to execute Linux commands
+
 
 echo "Executing command no.1"
 date
