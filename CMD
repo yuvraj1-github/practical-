@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simple Backup Script
+
 
 # Source and Destination
 SRC="/home/user/mydata"
