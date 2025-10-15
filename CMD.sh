@@ -1,19 +1,21 @@
 #!/bin/bash
+# Simple Backup Script
 
+# Source and Destination
+SRC="/home/user/mydata"
+DEST="/home/user/backup"
 
+# Create destination folder if it doesn’t exist
+mkdir -p "$DEST"
 
-echo "Executing command no.1"
-date
+# Copy files recursively
+cp -r "$SRC" "$DEST"
 
-echo "Executing command no.2"
-whoami
-
-echo "Executing command no.3"
-ls -l
-
-echo "Executing command no.4"
-df -h
-
-echo "Executing command no.5"
-echo "Result of 22/7 using bc:"
-
+# Check if copy was successful
+if [ $? -eq 0 ]; then
+    echo "✅ Backup created at $DEST on $(date)"
+    ls -lrth "$DEST"
+else
+    echo "❌ Backup failed!"44
+    exit 1
+fi
