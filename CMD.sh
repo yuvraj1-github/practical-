@@ -16,4 +16,4 @@ df -h
 
 echo "Executing command no.5"
 echo "Result of 22/7 using bc:"
-echo "22/7" | bc -l
+
